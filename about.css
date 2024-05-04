@@ -9,7 +9,7 @@
     animation-fill-mode: both;
 }
 body{
-    width: 100%;
+    width: 403px;
     background: url(bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -698,7 +698,7 @@ a.active, a:hover{
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 403px;
         height: 2332px;
         background-color: rgba(255, 255, 255, 0.5);
     }
