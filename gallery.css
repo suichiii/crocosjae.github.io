@@ -1,0 +1,1237 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+body{
+    width: 100%;
+    height: 1800px;
+    background: url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    cursor: url('cursor.png'), auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+    width: 1648px;
+    position: sticky;
+    border-radius: 25px;
+    margin: 7px auto 0 auto;
+    font-family: "Montserrat";
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.search-bar-container{
+    width: 1648px;
+    height: 290px;
+    background: url(bg_title.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    border-radius: 25px;
+    margin: 7px auto 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-position: left;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.search-bar-text-container{
+    height: 125px;
+    width: auto;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.inner-search-bar-container:hover{
+    transform: scale(1.05);
+    transition-duration: 400ms;
+}
+.inner-search-bar-container{
+    width: 1300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 50px;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.search-bar-icon{
+    width: auto;
+    color: #f3ad61;
+    padding: 5px;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.search-bar-input{
+    width: 1250px;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.search-bar-input input[type="search"] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 1250px;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    padding-left: 15px;
+}
+.search-bar-input form{
+    border: none;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 35px;
+    color: #f3ad61;
+    height: 100%;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-right: 520px;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+.logo img {
+    border-radius: 50%;
+    background: #f3ad61;
+    cursor: pointer;
+}
+.logo img:hover {
+    transform: scale(1.05);
+}
+.navbar ul{
+    float: right;
+    margin: auto;
+}
+.navbar ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+    width: 150px;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    text-align: center;
+}
+.navbar ul li a{
+    backdrop-filter: blur(8px);
+    color: #f3ad61;
+    font-size: 21px;
+    padding: 7px 13px;
+    font-family: "Montserrat";
+}
+a.active, a:hover{
+    -webkit-text-fill-color: #ffd480;
+    transition: 1s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #f3ad61;
+    float: right;
+    display: flex;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transform: matrix3d();
+}
+#check{
+    display: none;
+}
+.gallery1 {
+    max-width: 1648px;
+    min-height: 300px;
+    border-radius: 25px;
+    margin: 7px auto 0 auto;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.gallery1-left {
+    max-width: 808px;
+    min-height: 280px;
+    border-radius: 25px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery1-left-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery1-left-img img{
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10);
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.gallery1-left-img img:hover {
+    transform: translateY(-10);
+    transition-duration: 250ms;
+    width: 270px;
+    height: 270px;
+}
+.gallery1-left-text {
+    width: 470px;
+    height: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    margin-left: 25px;
+    transition: transform 0.25s ease-in-out;
+    color: #f3ad61;
+    position: relative;
+    z-index: 1;
+    font-family: "Montserrat";
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.gallery1-left-text:hover {
+    transform: scale(1.03);
+}
+.gallery1-left-text p{
+    width: 470px;
+    height: 250px;
+    border-radius: 25px;
+    font-family: "Montserrat";
+}
+
+.gallery1-right {
+    max-width: 808px;
+    min-height: 280px;
+    border-radius: 25px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery1-right-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.gallery1-right-img img{
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10);
+}
+.gallery1-right-img img:hover {
+    transform: translateY(-10);
+    transition-duration: 250ms;
+    width: 270px;
+    height: 270px;
+}
+.gallery1-right-text {
+    width: 470px;
+    height: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    margin-left: 25px;
+    color: #f3ad61;
+    transition: transform 0.25s ease-in-out;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.gallery1-right-text:hover {
+    transform: scale(1.03);
+}
+.gallery1-right-text p{
+    width: 470px;
+    height: 250px;
+    border-radius: 25px;
+    font-family: "Montserrat";
+}
+.gallery2 {
+    max-width: 1648px;
+    min-height: 300px;
+    border-radius: 25px;
+    margin: 7px auto 0 auto;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    background: #ffd480;
+    background-position: top;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.gallery2-left {
+    max-width: 808px;
+    min-height: 280px;
+    border-radius: 25px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery2-left-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery2-left-img img{
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    transform: translateY(-10);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10);
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.gallery2-left-img img:hover {
+    transform: translateY(-10);
+    transition-duration: 250ms;
+    width: 270px;
+    height: 270px;
+}
+.gallery2-left-text {
+    width: 470px;
+    height: 250px;
+    border-radius: 25px;
+    margin-left: 25px;
+    transition: transform 0.25s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+}
+.gallery2-left-text:hover {
+    transform: scale(1.03);
+}
+.gallery2-left-text p{
+    width: 470px;
+    height: 250px;
+    border-radius: 25px;
+    font-family: "Montserrat";
+}
+.gallery2-right {
+    max-width: 808px;
+    min-height: 280px;
+    border-radius: 25px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery2-right-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.gallery2-right-img img{
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10);
+}
+.gallery2-right-img img:hover {
+    transform: translateY(-10);
+    transition-duration: 250ms;
+    width: 270px;
+    height: 270px;
+}
+.gallery2-right-text {
+    width: 470px;
+    height: 250px;
+    border-radius: 25px;
+    margin-left: 25px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease-in-out;
+    font-family: "Montserrat";
+}
+.gallery2-right-text:hover {
+    transform: scale(1.03);
+}
+.gallery2-right-text p{
+    width: 470px;
+    height: 250px;
+    border-radius: 25px;
+    font-family: "Montserrat";
+}
+.productname {
+    width: 470px;
+    height: 90px;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 
+    1px 1px 0 black,
+    1px 1px 0 black,
+    1px 1px 0 black,
+    1px 1px 0 black;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.description {
+    width: 470px;
+    height: 90px;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.date {
+    width: 470px;
+    height: 70px;
+    border-radius: 25px;
+    padding: 20px;
+    padding-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 0;
+    font-size: 20px;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.footer {
+    max-width: 1648px;
+    min-height: 150px;
+    border-radius: 25px;
+    margin: 7px auto 0 auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Montserrat";
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #ffd480;
+    font-size: 25px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffd480;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 40px;
+    color: white;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: #f3ad61;
+    transition: 0.5s;
+}
+.bg_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1800px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .navbar ul li a{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+@media (max-width: 600px){
+    .checkbtn{
+        display: block;  
+    }
+    .checkbtn{
+        padding-left: 30px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:#fff;
+        top: 100px;
+        left: -500%;
+        text-align: center;
+        transition: all .5s;
+        border-radius: 25px;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 60px 0;
+        line-height: 30px;
+    }
+    .navbar ul li a{
+        font-size: 30px;
+        color:black;
+        border: 1px solid ;
+        float: left;
+        margin-left: 30%;
+        border: none;
+        align-items: center;
+        padding-left:20%;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    a.active,a:hover{
+        background: none;
+        color:bisque;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    a.active,a:hover{
+        background: none;
+        color:bisque;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    body{
+        width: 100%;
+        height: 5035px;
+        background: url(bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: sans-serif;
+        cursor: url('cursor.png'), auto;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        background: white;
+        height: 100px;
+        max-width: 400px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        border-radius: 25px;
+        margin: 7px auto 0 auto;
+        font-family: "Montserrat";
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery1 {
+        max-width: 395px;
+        min-height: 300px;
+        border-radius: 25px;
+        margin: 7px auto 0 auto;
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery1-left {
+        max-width: 808px;
+        min-height: 280px;
+        border-radius: 25px;
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gallery1-left-img {
+        width: 280px;
+        height: 280px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gallery1-left-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        transform: translateY(-10);
+        animation-name: slideInLeft;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery1-left-img img:hover {
+        transform: translateY(-10);
+        transition-duration: 250ms;
+        width: 230px;
+        height: 230px;
+    }
+    .gallery1-left-text {
+        max-width: 350px;
+        height: 250px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        margin-right: 20px;
+        color: #f3ad61;
+        transition: transform 0.25s ease-in-out;
+        animation-name: slideInLeft;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery1-left-text:hover {
+        transform: scale(1.03);
+    }
+    .gallery1-left-text p{
+        width: 350px;
+        height: 250px;
+        border-radius: 25px;
+        font-family: "Montserrat";
+        font-size: 17px;
+    }
+    .gallery1-right {
+        max-width: 808px;
+        min-height: 280px;
+        border-radius: 25px;
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gallery1-right-img {
+        width: 280px;
+        height: 280px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery1-right-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        transform: translateY(-10);
+    }
+    .gallery1-right-img img:hover {
+        transform: translateY(-10);
+        transition-duration: 250ms;
+        width: 230px;
+        height: 230px;
+    }
+    .gallery1-right-text {
+        max-width: 350px;
+        height: 250px;
+        margin-bottom: 40px;
+        border-radius: 25px;
+        margin-right: 20px;
+        color: #f3ad61;
+        transition: transform 0.25s ease-in-out;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery1-right-text:hover {
+        transform: scale(1.03);
+    }
+    .gallery1-right-text p{
+        max-width: 350px;
+        height: 250px;
+        border-radius: 25px;
+        font-family: "Montserrat";
+        font-size: 17px;
+    }
+    .gallery2 {
+        max-width: 395px;
+        min-height: 300px;
+        border-radius: 25px;
+        margin: 7px auto 0 auto;
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        background: #ffd480;
+        background-position: top;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery2-left {
+        max-width: 400px;
+        min-height: 280px;
+        border-radius: 25px;
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        background: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        margin-bottom: 10px;
+    }
+    .gallery2-left-img {
+        width: 280px;
+        height: 280px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gallery2-left-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        transform: translateY(-10);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        transform: translateY(-10);
+        animation-name: slideInLeft;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery2-left-img img:hover {
+        transform: translateY(-10);
+        transition-duration: 250ms;
+        width: 230px;
+        height: 230px;
+    }
+    .gallery2-left-text {
+        width: 350px;
+        height: 250px;
+        border-radius: 25px;
+        margin-right: 20px;
+        transition: transform 0.25s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat";
+        
+    }
+    .gallery2-left-text:hover {
+        transform: scale(1.03);
+    }
+    .gallery2-left-text p{
+        width: 350px;
+        height: 250px;
+        border-radius: 25px;
+        font-family: "Montserrat";
+        font-size: 17px;
+    }
+    .gallery2-right {
+        max-width: 808px;
+        min-height: 280px;
+        border-radius: 25px;
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        background: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gallery2-right-img {
+        width: 280px;
+        height: 280px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .gallery2-right-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        transform: translateY(-10);
+    }
+    .gallery2-right-img img:hover {
+        transform: translateY(-10);
+        transition-duration: 250ms;
+        width: 230px;
+        height: 230px;
+    }
+    .gallery2-right-text {
+        width: 350px;
+        height: 250px;
+        border-radius: 25px;
+        margin-right: 20px;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        transition: transform 0.25s ease-in-out;
+        font-family: "Montserrat";
+        margin-bottom: 40px;
+    }
+    .gallery2-right-text:hover {
+        transform: scale(1.03);
+    }
+    .gallery2-right-text p{
+        width: 350px;
+        height: 250px;
+        border-radius: 25px;
+        font-family: "Montserrat";
+        font-size: 17px;
+    }
+    .search-bar-container{
+        max-width: 395px;
+        min-height: 290px;
+        background: url(bg_title.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25px;
+        border-radius: 25px;
+        margin: 7px auto 0 auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        background-position: left;
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .search-bar-text-container{
+        max-width: 380px;
+        height: 125px;
+        width: auto;
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 17px;
+        text-align: center;
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        animation-name: slideInLeft;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .inner-search-bar-container:hover{
+        transform: scale(1.05);
+        transition-duration: 400ms;
+    }
+    .inner-search-bar-container{
+        max-width: 300px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 50px;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        margin-bottom: 40px;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .search-bar-icon{
+        width: auto;
+        color: #f3ad61;
+        padding: 5px;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .search-bar-input{
+        max-width: 250px;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        padding-left: 10px;
+    }
+    .search-bar-input input[type="search"] {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        width: 240px;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        
+    }
+    .search-bar-input form{
+        border: none;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .productname {
+        width: 470px;
+        height: 90px;
+        border-radius: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-top: 30px;
+        font-size: 25px;
+        text-align: center;
+        text-shadow: 
+        1px 1px 0 black,
+        1px 1px 0 black,
+        1px 1px 0 black,
+        1px 1px 0 black;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .description {
+        width: 400px;
+        height: 90px;
+        border-radius: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        
+    }
+    .date {
+        width: 470px;
+        height: 70px;
+        border-radius: 25px;
+        padding: 20px;
+        padding-left: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-top: 0;
+        font-size: 20px;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .logo {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 30px;
+        color: #f3ad61;
+        height: 100%;
+        font-weight: bold; 
+        padding-right: 500px;
+        animation-name: slideInLeft;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        cursor: pointer;
+    }
+    .logo p{
+        font-size: 25px;
+    }
+    .logo img {
+        border-radius: 50%;
+        background: #f3ad61;
+    }
+    .logo img:hover {
+        transform: scale(1.05);
+    }
+    .footer {
+        max-width: 395px;
+        min-height: 150px;
+        border-radius: 25px;
+        margin: 7px auto 0 auto;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Montserrat";
+        align-items: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        color: #ffd480;
+        font-size: 25px;
+        animation-name: fadeInUp;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+    .footer p {
+        font-size: 17px;
+        text-align: center;
+    }
+    .socialIcons a i{
+        font-size: 25px;
+    }
+    .bg_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5035px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes slideInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

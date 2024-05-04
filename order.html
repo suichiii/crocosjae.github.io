@@ -1,0 +1,100 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo(crocosjae).png" type="image/x-icon">
+    <title>crocosjae</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class = "bg_overlay">
+        <div class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+            <a href = "about.html">
+                <label class="logo"><img src="logo(crocosjaee).png" height="80">&nbsp;&nbsp;<p>crocosjae</p></label>
+            </a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="order.html" style = "font-size: 30px; color: #f3ad61; font-weight:bold;">ORDER</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+    <div class = "order-box">
+        <div class = "sign-up">
+            <form>
+                <div class = "details">
+                    <input type = "text" id = "username" name = "username" placeholder="Username :">
+                    <input type = "text" id = "email" name = "email" placeholder="E-Mail :">
+                    <input type = "password" id = "password" name = "password" placeholder="Password :">
+                </div>
+                <div class = "sign-in-button">
+                    <input type = "submit" id = "sign-in" name = "sign-in" value = "SIGN-IN">
+                </div>
+            </form>
+        </div>
+        <div class = "orders">
+            <div class = "orders-title">
+                <p>ORDER FORM :</p>
+            </div>
+            <form>
+            <div class = "orders-details">
+                <div class= "orders-details-name">
+                    <p>NAME :</p></div>
+                    <div class= "orders-details-name">
+                    <input type = "text" id = "name" name = "name" placeholder="Last Name,             Given Name             Middle Name">
+                </div>
+                <div class= "orders-details-contact">
+                    <p>CONTACT No. :</p></div>
+                    <div class= "orders-details-contact">
+                    <input type = "tel" id = "contact-number" name = "contact-number" placeholder="+63 ">
+                </div>
+                <div class = "orders-details-pq">
+                    <div class= "orders-details-product">
+                        <p>PRODUCT :</p>
+                        <select name = "Choose" id = "Choose">
+                            <option value="" disabled selected>CHOOSE</option>
+                            <option value="catcha">Catcha Tea</option>
+                            <option value="bearako">Kapeng Bearako</option>
+                            <option value="totoro">Totoro Pouch</option>
+                            <option value="rimuru">Rimuru Plushie</option>
+                            <option value="perry">Platypus Clips</option>
+                            <option value="gudetamah">Gudetama Clips</option>
+                            <option value="mushroom">Mushroom Beret</option>
+                            <option value="gudetamab">Rimuru Plushie</option>
+                            <option value="newproduct">Personal Request</option>
+                        </select>
+                    </div>
+                    <div class = "orders-details-quantity">
+                        <p>QUANTITY :</p>
+                            <input type = "number" id = "quanity" name = "quantity" placeholder="0">
+                    </div>
+                </div>
+                <div class = "orders-details-additional">
+                    <p>Additional Details :</p>
+                    <input type = "textarea" rows="4" id = "additional" name = "additional" placeholder="Describe what you like...">
+                </div>
+                <div class = "submit-button">
+                    <input type = "submit" id = "submit" name = "submit" value = "SUBMIT">
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class = "footer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/profile.php?id=61557288675552"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/crocosjae/"><i class="fab fa-instagram"></i></a>
+            <a href="about.html#contact"><i class="fab fa-google"></i></a>
+        </div>
+        <p>-&nbsp;Copyright&nbsp;&#169;&nbsp;2024;&nbsp;Designed by CSE&nbsp;- </p>
+    </div>
+</body>
+</html>
